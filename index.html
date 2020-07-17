@@ -18,19 +18,18 @@
 
       <span>Annually</span>
 
-      <label for="switch">
-        <input type="checkbox" id="switch">
-      </label>
+      <input type="checkbox" id="switch">
+      <label for="switch"></label>
 
       <span>Monthly</span>
     </div>
   
     <div class="container">
 
-      <div class="pricing__plan">
+      <div class="pricing__plan pricing__plan--left">
        <h3>Basic</h3> 
-        <p class="price">19.99</p>
-        <!-- &dollar;199.99 -->
+        <p class="price" id="year">119.99</p>
+        <p class="price month" id="month">19.99</p>
         <ul>
           <li>500 GB Storage</li>
           <li>2 Users Allowed</li>
@@ -42,8 +41,8 @@
 
       <div class="pricing__plan pricing__plan--middle">
         <h3>Professional</h3>
-        <!-- &dollar;24.99 -->
-        <p class="price">240.99</p>
+        <p class="price year">240.99</p>
+        <p class="price month">24.99</p>
         <ul>
           <li>1 TB Storage</li>
           <li>5 Users Allowed</li>
@@ -53,10 +52,10 @@
       </div>
 
 
-      <div class="pricing__plan">
+      <div class="pricing__plan pricing__plan--right">
         <h3>Master</h3>
-        <!-- <span class="price">&dollar;39.99</span>  -->
-        <p class="price"></span>399.99</p>
+        <p class="price year"></span>399.99</p>
+        <p class="price month">39.99</p>
         <ul>
           <li>2 TB Storage</li>
           <li>10 Users Allowed</li>
@@ -73,5 +72,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://luciegoujon.fr">Lucie Goujon</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
