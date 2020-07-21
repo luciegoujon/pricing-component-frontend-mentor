@@ -1,14 +1,22 @@
 let toggle = document.getElementById("switch");
-let year = document.getElementById("year");
-let month = document.getElementById("month");
+let year = document.querySelectorAll(".year");
+let month = document.querySelectorAll(".month");
 
 toggle.addEventListener("click", function() {
     if (this.checked) {
-        month.style.display = "block";
-        year.style.display = "none";
+        month.forEach(element => {
+            element.style.display = "block";
+        });
+        year.forEach(element => {
+            element.style.display = "none";
+        });
     }
     else {
-        month.style.display = "none";
-        year.style.display = "block";
+        month.forEach(element =>{
+            element.style.display = "none";
+        });
+        year.forEach(element => {
+            element.style.display = "block";
+        });  
     }
-})
+});
